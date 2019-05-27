@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@import '@/common/fonts/font.scss';
+
+$color1: #9693b5;
+$color2: #2400a8;
+$color3: #009cf3;
+$color4: #f0f2ff;
+$color5: #a7a4c1;
+$color6: #009df4;
+$font12: 12px;
+$font14: 14px;
+$font16: 16px;
+$font18: 18px;
+$font28: 20px;
+@mixin flex($direction:column,$inline:block) {
+  display: if($inline==block,flex,inline-flex);
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}
